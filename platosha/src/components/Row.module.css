@@ -1,0 +1,31 @@
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  height: 80px;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.card {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.cardReverce {
+  display: flex;
+  gap: 12px;
+  flex-direction: row-reverse;
+  align-items: center;
+
+}
+
+.image {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+
+.text {
+  text-align: center;
+}
