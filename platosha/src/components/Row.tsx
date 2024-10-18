@@ -19,7 +19,9 @@ export default function Row ({align = 'left', isBan = false, src, nameHero, id}:
           </div>
         ) : <div />}
         <div>
-          <p className={styles.text}>{isBan ? 'Pick ' + id: 'Ban' + id}</p>
+          <p className={`${styles.text} ${isBan ? styles.red : styles.green} `}>
+            {isBan ? 'Ban': 'Pick'} {id} {align === 'left' ? '<': '>'}
+            </p>
         </div>
         {align === 'right' ? (
           <div className={styles.cardReverce}>

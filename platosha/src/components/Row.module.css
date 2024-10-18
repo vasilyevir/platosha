@@ -26,6 +26,14 @@
   height: 36px;
 }
 
+.red {
+  color: #be2a2a;
+}
+
+.green {
+  color: #2abe45;
+}
+
 .text {
   text-align: center;
 }
